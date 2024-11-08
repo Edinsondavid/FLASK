@@ -1,0 +1,42 @@
+<!-- index.html-->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Bienvenidos a tu tienda de balones </h1>
+    <p>Esta es la pagina de inicio</p>
+   
+    <div class="d-flex flex-row gap-5">
+       <div class="card" style="width: 18rem;">
+           <img src="{{ url_for('static', filename='img/crs-31.jpg') }}" alt="MISIÓN CRS-31" width="200" height="200">
+           <div class="card-body">
+             <h5 class="card-title">MISIÓN CRS-31</h5>
+             <p class="card-text">El lunes 4 de noviembre a las 9:29 pm ET, Falcon 9 lanzó la 31.ª misión de servicios de reabastecimiento comercial (CRS-31) de Dragon a la Estación Espacial Internacional desde el Complejo de Lanzamiento 39A en el Centro Espacial Kennedy de la NASA en Florida. Después de la separación de las etapas, la primera etapa de Falcon 9 aterrizó en la Zona de Aterrizaje 1 de la Estación de la Fuerza Espacial de Cabo Cañaveral.</p>
+             <a href="#" class="btn btn-primary">Leer mas...</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem;">
+           <img src="{{ url_for('static', filename='img/starlink.jpg') }}" alt="MISIÓN STARLINK" width="200" height="200">
+           <div class="card-body">
+             <h5 class="card-title">MISIÓN STARLINK</h5>
+             <p class="card-text">SpaceX tiene previsto el jueves 7 de noviembre un lanzamiento Falcon 9 de 23 satélites Starlink a la órbita baja terrestre desde el complejo de lanzamiento espacial 40 (SLC-40) en la estación de la Fuerza Espacial de Cabo Cañaveral en Florida. El despegue está previsto para las 3:13 p. m., hora del este de EE. UU., con oportunidades adicionales hasta las 7:11 p. m., hora del este de EE. UU.</p>
+             <a href="#" class="btn btn-primary">Leer mas...</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem;">
+           <img src="{{ url_for('static', filename='img/crew.jpg') }}" alt="LA TRIPULACIÓN 8 REGRESA A LA TIERRA" width="200" height="200">
+           <div class="card-body">
+             <h5 class="card-title">LA TRIPULACIÓN 8 REGRESA A LA TIERRA</h5>
+             <p class="card-text">Después de 235 días en el espacio, los astronautas de la NASA de Dragon y Crew-8, Matthew Dominick y Michael Barratt , Jeanette Epps y el cosmonauta de Rocosmos, Alexander Grebenkin, regresaron a la Tierra y amerizaron en la costa de Florida a las 3:29 am ET del viernes 25 de octubre.</p>
+             <a href="#" class="btn btn-primary">Leer mas...</a>
+           </div>
+         </div>
+         <div class="card" style="width: 18rem;">
+           <img src="{{ url_for('static', filename='img/human.jpg') }}" alt="AVANCE DE LOS VUELOS ESPACIALES HUMANOS" width="200" height="200">
+           <div class="card-body">
+             <h5 class="card-title">AVANCE DE LOS VUELOS ESPACIALES HUMANOS</h5>
+             <p class="card-text">En febrero de 2022, Jared Isaacman y SpaceX anunciaron el Programa Polaris , un esfuerzo diseñado para avanzar rápidamente en las capacidades de vuelos espaciales humanos y, al mismo tiempo, apoyar causas importantes aquí en la Tierra.</p>
+             <a href="#" class="btn btn-primary">Leer mas...</a>
+           </div>
+         </div>
+    </div>
+{% endblock %}    

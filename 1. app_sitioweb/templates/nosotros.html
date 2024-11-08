@@ -1,0 +1,17 @@
+<!--nosotros.html-->
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Nosotros</h1>
+<P>Somos una empresa dedicada a la exploracion espacial</P>
+<div class="card" style="width: 18rem;">
+    <img src="{{ url_for('static', filename='img/human.jpg') }}" alt="AVANCE DE LOS VUELOS ESPACIALES HUMANOS" width="200" height="200">
+    <div class="card-body">
+      <h5 class="card-title">AVANCE DE LOS VUELOS ESPACIALES HUMANOS</h5>
+      <p class="card-text">En febrero de 2022, Jared Isaacman y SpaceX anunciaron el Programa Polaris , un esfuerzo diseñado para avanzar rápidamente en las capacidades de vuelos espaciales humanos y, al mismo tiempo, apoyar causas importantes aquí en la Tierra.</p>
+      <a href="#" class="btn btn-primary">Leer mas...</a>
+    </div>
+  </div>
+
+{% endblock %}
